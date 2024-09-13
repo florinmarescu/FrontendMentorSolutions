@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter',sans-serif;
+}
+
+body {
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%); /*this needs to change at the end*/
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 380px;
+  height: 600px;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 16px;
+}
+
+.profile-pic {
+  margin-bottom: auto;
+}
+
+p , h3 {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+#green {
+  color: hsl(75, 94%, 57%);
+  font-size: 14px;
+  margin-top: -12px;
+}
+
+#dev {
+  font-size: 14px;
+  color: hsl(0, 4%, 85%);
+}
+
+.profile-pic img {
+  margin-top: 35px;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin-bottom: auto;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.social-btn {
+  text-decoration: none;
+  white-space: nowrap;
+  color: hsl(0, 0%, 100%);
+  margin: 8px 0;
+  padding: 10px 0;
+  text-align: center;
+  width: 80%;
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.social-btn:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 12%);
+  font-weight: 700;
+}
