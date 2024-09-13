@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Figtree',sans-serif;
+}
+
+body{
+  background-color: hsl(47, 88%, 63%);
+}
+
+.container {
+  background-color: #fff;
+  width: 380px;
+  height: 525px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  border-radius: 16px;
+  border: 1px solid black;
+  box-shadow: 8px 8px 0px 0px black;
+}
+
+.image {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 18px;
+  margin-bottom: 5px;
+}
+
+.illustration {
+  border-radius: 16px;
+  margin-top: 5px;
+}
+
+h5 {
+  font-weight: 600;
+  margin-top: 19px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.text {
+  margin-left: 23px;
+}
+
+.text p {
+  font-size: 16px;
+  color: hsl(0, 0%, 42%);
+  font-weight: 500;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+
+.text a {
+  color: black;
+}
+
+#learn {
+  text-decoration: none;
+  background-color: hsl(47, 88%, 63%);
+  padding: 5px 10px 5px 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: max-content;
+  margin-top: 40px;
+  align-items: center;
+}
+
+#profile {
+  width: 32px;
+  margin-right: 13px;
+}
+
+.profile-container h4 {
+  font-size: 14px;
+  font-weight: 900;
+}
+
