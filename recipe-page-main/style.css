@@ -26,6 +26,8 @@ body {
   min-height: 100vh;
   padding-top: 50px;
   box-sizing: border-box;
+  padding-bottom: 50px;
+  padding-top: 150px;
 }
 
 hr {
