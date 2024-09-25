@@ -35,6 +35,8 @@ body {
   background-color: var(--clock-background);
 }
 
+mediascreen
+
 body, .clock, .container-date {
   transition: background-color 0.8s ease, color 0.8s ease; /* Smooth transition for background and text colors */
 }
@@ -112,3 +114,28 @@ body, .clock, .container-date {
   gap: 15px;
   color: var(--clock-text-color);
 }
+
+@media screen and (max-width: 600px) {
+
+  .clock ul {
+    font-size: 50px;
+    gap: 5px;
+  }
+
+ 
+  #date {
+    font-size: 10px;
+    margin-right: -20px;
+  }
+
+  
+  .main-container {
+    width: 300px;
+  }
+  
+  #theme-switch {
+    height: 30px;
+    width: 30px;
+  }
+}
+
