@@ -1,0 +1,114 @@
+:root {
+  --base-color: white;             /* Light mode background color */
+  --base-variant: rgb(240, 240, 240); /* Slightly off-white for backgrounds */
+  --text-color: #000000;           /* Light mode text color */
+  --secondary-text: #333333;       /* Darker gray for secondary text */
+  --primary-color: grey;           /* Primary color for other elements */
+  --accent-color: blue;            /* Accent color for interactive elements */
+  --clock-background: white;       /* Background for the clock in light mode */
+  --clock-text-color: black;       /* Text color for the clock in light mode */
+}
+
+.darkmode {
+  --base-color: rgb(0, 0, 0);      /* Dark mode background color */
+  --base-variant: rgb(31, 31, 31); /* Darker variant for backgrounds */
+  --text-color: #ffffff;           /* Dark mode text color */
+  --secondary-text: #b3b3b3;       /* Lighter gray for secondary text */
+  --primary-color: rgb(100, 93, 93); /* Primary color for dark mode */
+  --accent-color: blue;            /* Accent color for interactive elements */
+  --clock-background: black;       /* Background for the clock in dark mode */
+  --clock-text-color: white;       /* Text color for the clock in dark mode */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Orbitron', Arial;
+  font-weight: 900;
+  background-color: var(--clock-background);
+}
+
+body, .clock, .container-date {
+  transition: background-color 0.8s ease, color 0.8s ease; /* Smooth transition for background and text colors */
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+#theme-switch {
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--base-variant);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#theme-switch:hover {
+  opacity: 0.8;
+}
+#theme-switch:active {
+  opacity: 0.5;
+}
+
+#theme-switch svg{
+  fill: var(--primary-color);
+}
+
+#theme-switch svg:last-child {
+  display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+  display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+  display: block;
+}
+
+.main-container {
+  width: 460px;
+}
+
+.container-date {
+  width: 100%;
+}
+
+#date {
+  text-align: right;
+  font-size: 12px;
+  font-family: 'Inter' , Arial;
+  font-weight: 450;
+  color: var(--text-color);
+  margin-right: -35px;
+}
+
+.clock {
+  width: 100%;
+}
+
+.clock ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  font-size: 100px;
+  gap: 15px;
+  color: var(--clock-text-color);
+}
